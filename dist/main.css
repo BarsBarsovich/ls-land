@@ -346,10 +346,22 @@ h6 {
     content: "";
     position: absolute;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     bottom: -30px;
     width: 70px;
     height: 6px;
     background: #f7a60f; }
+
+.subtitle {
+  font-size: 23px;
+  font-family: "Montserrat";
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 400;
+  width: 50%; }
 
 .button {
   font-family: 'Montserrat';
@@ -439,13 +451,6 @@ h6 {
   .step__logo {
     width: 100%;
     text-align: center; }
-    .step__logo-img {
-      height: 192px;
-      width: 214px;
-      -o-object-fit: contain;
-      object-fit: contain; }
-      .step__logo-img--left {
-        margin-top: -5px; }
   .step__title {
     text-align: center;
     padding-top: 70px;
@@ -465,10 +470,53 @@ h6 {
 .team {
   background: #f2f7f8; }
   .team__container {
+    padding-top: 100px; }
+
+.authors {
+  margin-top: 80px; }
+  .authors__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-bottom: 110px; }
+  .authors__item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-top: 100px; }
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 90px; }
+    .authors__item:first-child {
+      margin-left: 0; }
+  .authors__card {
+    font-family: "Montserrat";
+    color: #333333; }
+    .authors__card-photo {
+      padding-bottom: 20px; }
+    .authors__card-name {
+      font-size: 27px;
+      line-height: 0.788; }
+    .authors__card-job-title {
+      font-size: 18px;
+      color: #418c6b;
+      line-height: 1.182; }
+    .authors__card-desc {
+      padding-top: 20px;
+      font-size: 17px;
+      line-height: 1.281; }
+
+.loft-steps__container {
+  padding-top: 110px; }
