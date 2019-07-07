@@ -1,0 +1,14 @@
+.button {
+  font-family: 'Montserrat';
+  color: #fff;
+  padding: 20px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background: rgb(216, 73, 64);
+  &:focus{
+    outline: auto;
+  }
+}

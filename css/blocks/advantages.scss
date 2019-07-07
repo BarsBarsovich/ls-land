@@ -1,0 +1,16 @@
+.advantages {
+  padding-top: 95px;
+
+  &__steps {
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 65px;
+    }
+
+    &-item {
+      width: 50%;
+    }
+  }
+}

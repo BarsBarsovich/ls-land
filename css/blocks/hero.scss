@@ -1,0 +1,43 @@
+.hero {
+  background: #333333;
+  padding-bottom: 125px;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 70px;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    color: #fff;
+
+    &-par {
+      padding-top: 70px;
+      font-size: 48px;
+      font-weight: 800;
+    }
+
+    &-img {
+      width: 400px;
+      object-fit: contain;
+      height: 400px;
+    }
+
+    &-wave {
+      background: url(../img/wave.png) center center/cover no-repeat;
+      background-position: 2px;
+      display: inline-block;
+      max-width: 304px;
+      padding: 0 10px;
+    }
+
+    &-desc {
+      padding-top: 70px;
+      font-size: 24px;
+    }
+  }
+
+  &__btn-wrapper {
+    padding-top: 35px;
+  }
+
+}

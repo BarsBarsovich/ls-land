@@ -1,0 +1,19 @@
+.title {
+  font-size: 36px;
+  font-family: "Montserrat";
+  color: hsl(0, 0%, 20%);
+  font-weight: bold;
+  line-height: 1.2;
+  position: relative;
+  text-align: center;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    width: 70px;
+    height: 6px;
+    background: rgb(247, 166, 15);
+  }
+}
