@@ -354,6 +354,23 @@ h6 {
     height: 6px;
     background: #f7a60f; }
 
+.title--border {
+  font-size: 36px;
+  font-family: "Montserrat";
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+  position: relative;
+  text-align: left; }
+  .title--border:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 70px;
+    height: 6px;
+    background: #f7a60f; }
+
 .subtitle {
   font-size: 23px;
   font-family: "Montserrat";
@@ -523,3 +540,105 @@ h6 {
 
 .loft-steps__list {
   padding-top: 70px; }
+
+.coopereation {
+  background: #f2f7f8; }
+
+.personal-card {
+  -webkit-box-shadow: 2px 5px 29px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 5px 29px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff; }
+  .personal-card__container {
+    margin: 15px;
+    border: 1px solid #dbe1e2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .personal-card__container-logo {
+      padding: 41px 0 34px 90px; }
+    .personal-card__container-text {
+      padding: 50px 0 0 75px; }
+  .personal-card__img {
+    height: 314px;
+    width: 314px;
+    border-radius: 50%;
+    -o-object-fit: contain;
+    object-fit: contain; }
+
+.loft-love__container {
+  padding: 110px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.loft-love__description {
+  padding-right: 45px; }
+
+.loft-love__text {
+  color: #333333;
+  font-family: Montserrat;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21.27px; }
+  .loft-love__text--big-pt {
+    padding-top: 50px; }
+  .loft-love__text--normal {
+    padding-top: 25px; }
+
+.loftblog {
+  background: #f2f7f8; }
+  .loftblog__container {
+    padding-top: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .loftblog__container-photo {
+      background: #f2f7f8;
+      border-radius: 5px; }
+      .loftblog__container-photo--padding {
+        padding-left: 90px; }
+    .loftblog__container-desc {
+      padding-left: 50px; }
+      .loftblog__container-desc--no-padding {
+        padding-left: 0; }
+
+.links-list {
+  padding-top: 45px; }
+  .links-list__item {
+    padding-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+    .links-list__item:first-child {
+      padding-top: 0; }
+    .links-list__item-desc {
+      padding-left: 8px; }
+  .links-list__social-icon {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 700; }
+  .links-list__social-text {
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 400; }

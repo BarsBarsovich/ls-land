@@ -1,0 +1,27 @@
+.links-list {
+    padding-top: 45px;
+    &__item {
+        &:first-child{
+            padding-top: 0;
+        }
+        padding-top: 30px;
+        display: flex;
+        align-items: flex-end;
+
+        &-desc{
+            padding-left: 8px;
+        }
+    }
+
+    &__social-icon {
+        font-family: Montserrat;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    &__social-text{
+        font-family: Montserrat;
+        font-size: 17px;
+        font-weight: 400;
+    }
+}

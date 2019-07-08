@@ -1,0 +1,27 @@
+.loftblog {
+    background: #f2f7f8;
+
+    &__container {
+        padding-top: 110px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+
+        &-photo {
+            background: #f2f7f8;
+            border-radius: 5px;
+            &--padding{
+                padding-left: 90px;
+            }
+        }
+
+        &-desc{
+          padding-left: 50px;
+          &--no-padding{
+              padding-left: 0;
+          }
+        }
+
+
+    }
+}
