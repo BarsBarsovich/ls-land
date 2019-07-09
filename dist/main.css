@@ -599,6 +599,8 @@ h6 {
 
 .loftblog {
   background: #f2f7f8; }
+  .loftblog--padding-bottom {
+    padding-bottom: 110px; }
   .loftblog__container {
     padding-top: 110px;
     display: -webkit-box;
@@ -610,6 +612,8 @@ h6 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+    .loftblog__container--padding-bottom {
+      padding-bottom: 110px; }
     .loftblog__container-photo {
       background: #f2f7f8;
       border-radius: 5px; }
@@ -642,3 +646,174 @@ h6 {
     font-family: Montserrat;
     font-size: 17px;
     font-weight: 400; }
+
+.reviews__container {
+  padding-top: 110px; }
+
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0 110px; }
+
+.reviews__item {
+  margin-left: 68px; }
+  .reviews__item:first-child {
+    margin-left: 0; }
+
+.card {
+  min-width: 347px;
+  min-height: 447px;
+  -webkit-box-shadow: 2px 5px 29px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 5px 29px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: Montserrat; }
+  .card__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 27px 22px 35px 22px; }
+  .card__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .card__header-img {
+      height: 33px;
+      width: 33px;
+      -o-object-fit: contain;
+      object-fit: contain;
+      border-radius: 50%; }
+    .card__header-name {
+      color: #333333;
+      font-size: 18px;
+      font-weight: 700; }
+    .card__header-job {
+      color: #418c6b;
+      font-size: 14px;
+      font-weight: 400; }
+      .card__header-job-container {
+        padding-left: 6px; }
+  .card__title {
+    padding-top: 34px;
+    color: #333333;
+    font-size: 21px;
+    font-weight: 700; }
+  .card__body {
+    padding-top: 20px;
+    color: #333333;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px; }
+
+.questions {
+  background: #f2f7f8; }
+  .questions__container {
+    padding-top: 98px; }
+  .questions__list {
+    padding-top: 65px;
+    padding-bottom: 100px; }
+    .questions__list-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding-top: 86px; }
+      .questions__list-row:first-child {
+        padding-top: 0; }
+  .questions__item {
+    width: 50%;
+    font-family: Montserrat; }
+    .questions__item:first-child {
+      margin-right: 200px; }
+    .questions__item-number {
+      width: 62px;
+      height: 63px;
+      border: 4px solid #4abba4;
+      color: #333333;
+      font-size: 24px;
+      font-weight: 700;
+      border-radius: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .questions__item-title {
+      padding-top: 24px;
+      font-size: 27px;
+      font-weight: 400;
+      color: #333333; }
+    .questions__item-text {
+      color: #333333;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: left;
+      padding-top: 19px; }
+
+.claim__container {
+  padding-top: 85px; }
+
+.claim__btn {
+  padding-top: 60px;
+  padding-bottom: 75px;
+  text-align: center; }
+
+.footer {
+  background: #333333; }
+  .footer__container {
+    padding: 49px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .footer__text {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 400; }
+  .footer__creator {
+    margin-left: 350px; }
+
+.contacts {
+  padding-top: 20px; }
+  .contacts__text {
+    color: #4abba4;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none; }
+  .contacts__vk:before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 18px;
+    padding-right: 7px;
+    background: url("../img/icons/vk_logo.svg") center center/contain no-repeat; }
+  .contacts__telega {
+    padding-left: 28px; }
+    .contacts__telega:before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 18px;
+      padding-right: 7px;
+      background: url("../img/icons/telegram.svg") center center/contain no-repeat; }

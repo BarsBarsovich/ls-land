@@ -1,0 +1,32 @@
+.contacts{
+  padding-top: 20px;
+  &__text{
+    color: #4abba4;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  &__vk{
+    &:before{
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 18px;
+      padding-right: 7px;
+      background: url("../img/icons/vk_logo.svg") center center /contain no-repeat;
+    }
+  }
+
+  &__telega{
+    padding-left: 28px;
+    &:before{
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 18px;
+      padding-right: 7px;
+      background: url("../img/icons/telegram.svg") center center /contain no-repeat;
+    }
+  }
+}

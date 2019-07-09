@@ -1,10 +1,16 @@
 .loftblog {
     background: #f2f7f8;
+    &--padding-bottom{
+        padding-bottom: 110px;
+    }
 
     &__container {
         padding-top: 110px;
+        &--padding-bottom{
+            padding-bottom: 110px;
+        }
         display: flex;
-        align-items: flex-start;
+        align-items: flex-start; 
         justify-content: center;
 
         &-photo {
@@ -21,7 +27,5 @@
               padding-left: 0;
           }
         }
-
-
     }
 }
