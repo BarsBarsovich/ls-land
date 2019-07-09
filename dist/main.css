@@ -316,6 +316,9 @@ html,
 body {
   height: 100%; }
 
+.wrapper {
+  position: relative; }
+
 .container {
   max-width: 1100px;
   width: 100%;
@@ -817,3 +820,65 @@ h6 {
       height: 18px;
       padding-right: 7px;
       background: url("../img/icons/telegram.svg") center center/contain no-repeat; }
+
+.modal {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: -10000px;
+  left: -10000px;
+  opacity: 0.95;
+  background: #3d3d3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 0; }
+  .modal--active {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    transition: all .5s ease-in;
+    top: 0;
+    left: 0; }
+  .modal__close {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    top: 21px;
+    right: 10px; }
+  .modal__window {
+    width: 584px;
+    height: auto;
+    -webkit-box-shadow: 2px 5px 29px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 5px 29px rgba(0, 0, 0, 0.1);
+    background-color: #f2f7f8;
+    font-family: Montserrat; }
+  .modal__container {
+    padding: 52px 22px 42px 22px;
+    position: relative; }
+  .modal__text {
+    padding-top: 26px;
+    color: #333333;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center; }
+    .modal__text--first-elem {
+      padding-top: 52px; }
+  .modal__input-container {
+    padding-top: 37px; }
+  .modal__input-input {
+    width: 506px;
+    height: 35px;
+    margin-top: 20px;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400; }
+  .modal__btn-container {
+    padding-top: 30px;
+    text-align: center; }

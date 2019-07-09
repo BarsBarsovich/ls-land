@@ -1,0 +1,61 @@
+.card {
+  min-width: 347px;
+  min-height: 447px;
+  box-shadow: 2px 5px 29px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  font-family: Montserrat;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: 27px 22px 35px 22px;
+  }
+
+  &__header {
+    //width: 30%;
+    display: flex;
+    align-items: flex-start;
+
+
+    &-img {
+      height: 33px;
+      width: 33px;
+      object-fit: contain;
+      border-radius: 50%;
+    }
+
+    &-name {
+      color: #333333;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    &-job {
+      color: #418c6b;
+      font-size: 14px;
+      font-weight: 400;
+
+      &-container {
+        padding-left: 6px;
+      }
+
+    }
+  }
+
+  &__title {
+    padding-top: 34px;
+    color: #333333;
+    font-size: 21px;
+    font-weight: 700;
+    //width: 30%;
+  }
+
+  &__body {
+    padding-top: 20px;
+    color: #333333;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    //width: 30%;
+  }
+}

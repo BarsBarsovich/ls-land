@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -11,6 +11,9 @@
 
 <body>
 <div class="wrapper">
+
+  <!--  fdsffsdfsdfdsfs-->
+
 
   <section class="hero">
     <div class="hero__container container">
@@ -519,7 +522,7 @@
       </h2>
     </div>
     <div class="claim__btn">
-      <button class="button">Оставить заявку</button>
+      <button class="button" id="sendrequest">Оставить заявку</button>
     </div>
   </section>
   <footer class="footer">
@@ -543,7 +546,49 @@
       </div>
     </div>
   </footer>
+
+
+  <div class="modal" id="modalwindow">
+    <div class="modal__window">
+      <div class="modal__container">
+        <h2 class="title">Стань автором LoftTeam</h2>
+        <p class="modal__text modal__text--first-elem">
+          Представьтесь пожалуйста. Поделитесь своими знаниями и опытом. Мы свяжемся с вами, если посчитаем, что вы
+          подходите нашей команде.
+        </p>
+
+        <p class="modal__text">
+          Если у вас есть идея конкретного курса, это отлично! Пришлите нам подробности, и мы вместе с вами разработаем
+          концепцию.
+        </p>
+
+        <form action="index.html">
+          <div class="modal__input-container">
+            <input type="text" class="modal__input-input" placeholder="ФИО"><br/>
+            <input type="text" class="modal__input-input" placeholder="Email"><br/>
+            <input type="text" class="modal__input-input"
+                   placeholder="Cсылка на личный сайт, соцсеть или мессенджер"><br/>
+            <input type="text" class="modal__input-input" placeholder="Область в которой вы эксперт"><br/>
+            <input type="text" class="modal__input-input" placeholder="Каким навыкам вы можете научить?"><br/>
+            <input type="text" class="modal__input-input"
+                   placeholder="Какой практический опыт у вас есть в этой области?"><br/>
+            <input type="text" class="modal__input-input"
+                   placeholder="Какая у вас активность в тематических сообществах?"><br/>
+            <input type="text" class="modal__input-input" placeholder="Почему вы отлично подходите для LoftTeam?"><br/>
+            <input type="text" class="modal__input-input" placeholder="Тема вашего будущего курса"><br/>
+            <input type="text" class="modal__input-input"
+                   placeholder="Ссылка на ваш скринкаст, вебинар или выступление">
+          </div>
+          <div class="modal__btn-container">
+            <button type="submit" class="button">Отправить</button>
+          </div>
+        </form>
+        <img src="./img/icons/close.svg" alt="" class="modal__close" id="close">
+      </div>
+    </div>
+  </div>
 </div>
+<script src="js/main.js"></script>
 </body>
 
 </html>

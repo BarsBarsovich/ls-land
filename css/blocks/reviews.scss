@@ -1,0 +1,18 @@
+.reviews{
+  &__container{
+    // display: flex;
+    padding-top: 110px;
+  }
+
+  &__list{
+    display: flex;
+    padding: 100px 0 110px;
+  }
+
+  &__item{
+    margin-left: 68px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+}
