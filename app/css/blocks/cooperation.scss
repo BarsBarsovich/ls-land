@@ -1,3 +1,15 @@
 .coopereation {
     background: #f2f7f8;
 }
+
+@media screen and (max-width: 1024px) {
+    .cooperation {
+        .container {
+            max-width: 100%;
+        }
+    }
+
+    .cooperation__container {
+        max-width: 100%;
+    }
+}
