@@ -29,3 +29,28 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .loftblog__container {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .loftblog__container-photo {
+        width: 100%;
+    }
+
+    .loftblog__container-img {
+        width: 100%;
+        margin: 0 0 32px 0;
+    }
+
+    .loftblog__container-desc {
+        padding: 0;
+        margin: 0 0 32px 0;
+    }
+
+    .loftblog__container-photo--padding {
+        padding: 0;
+    }
+}

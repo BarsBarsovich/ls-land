@@ -26,3 +26,25 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .loft-love__container {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .loft-love__description {
+        padding: 0;
+        margin: 0 0 32px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .loft-love__heart-logo {
+        width: 100%;
+    }
+
+    .loft-love__heart-logo img {
+        width: 100%;
+    }
+}

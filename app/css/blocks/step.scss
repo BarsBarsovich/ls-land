@@ -46,3 +46,14 @@
     margin-left: 54px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .step__desc {
+    margin: 0;
+    width: 100%;
+  }
+
+  .step__title {
+    padding: 32px 0 0 0;
+  }
+}

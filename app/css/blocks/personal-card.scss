@@ -23,4 +23,25 @@
       border-radius: 50%;
       object-fit: contain;
     }
-} 
+}
+
+@media screen and (max-width: 767px) {
+  .personal-card__container {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px;
+  }
+
+  .personal-card__container-logo {
+    padding: 0;
+    width: 100%;
+  }
+
+  .personal-card__img {
+    width: 100%;
+  }
+
+  .personal-card__container-text {
+    padding: 0;
+  }
+}

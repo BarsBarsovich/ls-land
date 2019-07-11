@@ -17,3 +17,28 @@
     margin-left: 350px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .footer__container {
+    padding: 24px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .footer__contacts, .footer__creator {
+    padding: 16px;
+    width: 45%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__container {
+    flex-flow: column nowrap;
+  }
+
+  .footer__contacts, .footer__creator {
+    width: 100%;
+  }
+}

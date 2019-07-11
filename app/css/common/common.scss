@@ -32,3 +32,18 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 32px !important;
+  }
+
+  section {
+    padding: 64px 0 !important;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+

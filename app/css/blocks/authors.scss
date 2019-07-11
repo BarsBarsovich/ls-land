@@ -45,3 +45,30 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .authors__list {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .authors__item {
+    margin: 0 0 32px 0;
+    width: 45%;
+  }
+
+  .authors__item:last-child {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .authors__list {
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  .authors__item {
+    width: 100%;
+  }
+}

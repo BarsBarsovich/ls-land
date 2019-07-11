@@ -14,3 +14,21 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .advantages__container {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .advantages__steps-list {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .advantages__steps-item {
+    width: 100%;
+  }
+
+
+}

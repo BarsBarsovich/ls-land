@@ -30,3 +30,15 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .contacts__telega {
+    padding: 0;
+    margin: 12px 0 0 0;
+  }
+
+  .contacts {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}

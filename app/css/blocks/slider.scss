@@ -105,3 +105,9 @@ li {
     padding-top: 35px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .slider__item {
+    max-width: 730px;
+  }
+}
