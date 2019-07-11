@@ -8,8 +8,16 @@ if((isset($_POST['name'])&&$_POST['email']!="")){ //Проверка отпра�
                         <title>'.$subject.'</title>
                     </head>
                     <body>
-                        <p>Email: '.$_POST['name'].'</p>
+                        <p>Email: '.$_POST['email'].'</p>
                         <p>Телефон: '.$_POST['phone'].'</p>
+                        <p>Cсылка на личный сайт, соцсеть или мессенджер: '.$_POST['social']' </p>
+                        <p>Область в которой вы эксперт: '.$_POST['oblast']' </p>
+                        <p>Каким навыкам вы можете научить: '.$_POST['skills']' </p>
+                        <p>Практический опыт у вас есть в этой области: '.$_POST['expirience']' </p>
+                        <p>Активность в тематических сообществах: '.$_POST['activity']' </p>
+                        <p>Почему вы отлично подходите для LoftTeam?: '.$_POST['lofteam']' </p>
+                        <p>Тема вашего будущего курса: '.$_POST['theme']' </p>
+                        <p>Ссылка на ваш скринкаст, вебинар или выступление: '.$_POST['you']' </p>
                     </body>
                 </html>'; //Текст нащего сообщения можно использовать HTML теги
         $headers  = "Content-type: text/html; charset=utf-8 \r\n"; //Кодировка письма
@@ -17,27 +25,3 @@ if((isset($_POST['name'])&&$_POST['email']!="")){ //Проверка отпра�
         mail($to, $subject, $message, $headers); //Отправка письма с помощью функции mail
 }
 ?>
-
-<!-- 
-<form action="data.php" method="POST">
-            <div class="modal__input-container">
-              <input type="text" class="modal__input-input" placeholder="ФИО" required name="name"><br />
-              <input type="text" class="modal__input-input" placeholder="Email" required name="email"><br />
-              <input type="text" class="modal__input-input"
-                placeholder="Cсылка на личный сайт, соцсеть или мессенджер" required name="social"><br />
-              <input type="text" class="modal__input-input" placeholder="Область в которой вы эксперт" required name="oblast"><br />
-              <input type="text" class="modal__input-input" placeholder="Каким навыкам вы можете научить?" required name="skills"><br />
-              <input type="text" class="modal__input-input"
-                placeholder="Какой практический опыт у вас есть в этой области?" required name="expirience"><br />
-              <input type="text" class="modal__input-input"
-                placeholder="Какая у вас активность в тематических сообществах?" required name="activity"><br />
-              <input type="text" class="modal__input-input"
-                placeholder="Почему вы отлично подходите для LoftTeam?" required name="lofteam"><br />
-              <input type="text" class="modal__input-input" placeholder="Тема вашего будущего курса" required name="theme"><br />
-              <input type="text" class="modal__input-input"
-                placeholder="Ссылка на ваш скринкаст, вебинар или выступление" required name="you">
-            </div>
-            <div class="modal__btn-container">
-              <button type="submit" class="button">Отправить</button>
-            </div>
-          </form> -->
