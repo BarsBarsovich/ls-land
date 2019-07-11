@@ -439,7 +439,7 @@
           <div class="links-list">
             <div class="links-list__item">
               <div class="links-list__item-logo">
-                <img src="./img/icons/domain.svg" alt="" class="links-list__item-img">
+                <img src="./img/icons/domain.png" alt="" class="links-list__item-img">
               </div>
               <div class="links-list__item-desc">
                 <strong class="links-list__social-icon">loftblog.ru </strong>
@@ -449,7 +449,7 @@
             </div>
             <div class="links-list__item">
               <div class="links-list__item-logo">
-                <img src="./img/icons/youtube.svg" alt="" class="links-list__item-img">
+                <img src="./img/icons/youtube.png" alt="" class="links-list__item-img">
               </div>
               <div class="links-list__item-desc">
                 <strong class="links-list__social-icon">youtube.com</strong>
@@ -459,7 +459,7 @@
             </div>
             <div class="links-list__item">
               <div class="links-list__item-logo">
-                <img src="./img/icons/vk.svg" alt="" class="links-list__item-img">
+                <img src="./img/icons/vk.png" alt="" class="links-list__item-img">
               </div>
               <div class="links-list__item-desc">
                 <strong class="links-list__social-icon">vk.com</strong>
@@ -486,7 +486,7 @@
           <div class="links-list">
             <div class="links-list__item">
               <div class="links-list__item-logo">
-                <img src="./img/icons/domain.svg" alt="" class="links-list__item-img">
+                <img src="./img/icons/domain.png" alt="" class="links-list__item-img">
               </div>
               <div class="links-list__item-desc">
                 <strong class="links-list__social-icon">loftschool.com</strong>
@@ -496,7 +496,7 @@
             </div>
             <div class="links-list__item">
               <div class="links-list__item-logo">
-                <img src="./img/icons/vk.svg" alt="" class="links-list__item-img">
+                <img src="./img/icons/vk.png" alt="" class="links-list__item-img">
               </div>
               <div class="links-list__item-desc">
                 <strong class="links-list__social-icon">vk.com</strong>
@@ -506,7 +506,7 @@
             </div>
             <div class="links-list__item">
               <div class="links-list__item-logo">
-                <img src="./img/icons/youtube.svg" alt="" class="links-list__item-img">
+                <img src="./img/icons/youtube.png" alt="" class="links-list__item-img">
               </div>
               <div class="links-list__item-desc">
                 <strong class="links-list__social-icon">youtube.com</strong>
@@ -736,8 +736,8 @@
             концепцию.
           </p>
 
-          <form action="data.php" method="POST">
-            <div class="modal__input-container">
+          <form onsubmit="sendForm()" class="form">
+            <div class="modal__input-container" >
               <input type="text" class="modal__input-input" placeholder="ФИО" required name="name"><br />
               <input type="text" class="modal__input-input" placeholder="Email" required name="email"><br />
               <input type="text" class="modal__input-input"
@@ -763,7 +763,7 @@
       </div>
     </div>
   </div>
+  <script src="js/jquery.js"></script>
   <script src="js/main.js"></script>
 </body>
-
 </html>
