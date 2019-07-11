@@ -2,15 +2,33 @@ const btn = document.querySelector('#sendrequest');
 const close = document.querySelector('#close');
 const prevBtn = document.querySelectorAll('.prevbtn');
 const nextBtn = document.querySelectorAll('.nextbtn');
-const slidesWrapper =  document.querySelector('.slider__list');
+const slidesWrapper = document.querySelector('.slider__list');
 let slidesCount = 1;
 let sliderPosition;
 
 let widthSliderItem = document.querySelector('.slider__item');
-widthSliderItem.style.width =  widthSliderItem.clientWidth + 'px';
+let fixedItem = 0;
+
+if (window.outerWidth < 769) {
+  console.log('Iwork');
+  if (window.outerWidth < 400) {
+    let temp = document.querySelectorAll('.slider__item');
+    Array.from(temp).forEach(item => {
+      item.style.width = 280 + 'px';
+    })
+    fixedItem = 321;
+  } else {
+    let temp = document.querySelectorAll('.slider__item');
+    Array.from(temp).forEach(item => {
+      item.style.width = window.outerWidth - 30 + 'px';
+      fixedItem = window.outerWidth - 30;
+    })
+  }
+} else {
+  fixedItem = 1100;
+}
+
 console.log(widthSliderItem);
-
-
 
 
 btn.addEventListener('click', function () {
@@ -25,38 +43,35 @@ close.addEventListener('click', function () {
 });
 
 Array.from(prevBtn).forEach((item) => {
-  item.addEventListener('click', function () {  
+  item.addEventListener('click', function () {
+
     slidesCount--;
-    sliderPosition -= widthSliderItem;
+    sliderPosition -= fixedItem;
     slidesWrapper.style.transform = `translateX(-${sliderPosition}px)`;
     document.getElementById('lastbtn').disabled = false;
   })
 });
 
-Array.from(nextBtn).forEach((item)=>{
-  item.addEventListener('click', function(){    
-    if (slidesCount <= 3){
-      sliderPosition = slidesCount * widthSliderItem;
+Array.from(nextBtn).forEach((item) => {
+  item.addEventListener('click', function () {
+    if (slidesCount <= 3) {
+      sliderPosition = slidesCount * fixedItem;
       slidesWrapper.style.transform = `translateX(-${sliderPosition}px)`
       slidesCount++;
     }
-    console.log(slidesCount);
-
-    // console.log(document.getElementById('lastbtn'));
     document.getElementById('lastbtn').disabled = slidesCount <= 3;
-    
   })
 })
 
 function sendForm() {
   event.preventDefault();
   $.ajax({
-      type: "get",
-      url: "./data.php",
-      data: $("#myform").serialize(),
-      success: function (data) {
-          $('.form').toggleClass('active');
-          alert('Письмо отправлено');
-      }
+    type: "get",
+    url: "./data.php",
+    data: $("#myform").serialize(),
+    success: function (data) {
+      $('.form').toggleClass('active');
+      alert('Письмо отправлено');
+    }
   });
 }

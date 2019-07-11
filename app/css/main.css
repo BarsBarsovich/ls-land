@@ -585,7 +585,11 @@ h6 {
     -webkit-justify-content: flex-start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-bottom: 110px; }
+    padding-bottom: 110px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .authors__item {
     display: -webkit-box;
     display: -webkit-flex;
@@ -660,15 +664,26 @@ h6 {
   padding-top: 110px; }
 
 .loft-steps__list {
-  padding-top: 70px; }
+  padding-top: 70px;
+  padding-bottom: 50px; }
 
 .coopereation {
   background: #f2f7f8; }
 
+@media screen and (max-width: 1024px) {
+  .cooperation .container {
+    max-width: 100%; }
+  .cooperation__container {
+    max-width: 100%; } }
+
 .personal-card {
   -webkit-box-shadow: 2px 5px 29px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 5px 29px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  -webkit-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+          transform: translateY(-100px);
+  font-family: "Montserrat"; }
   .personal-card__container {
     margin: 15px;
     border: 1px solid #dbe1e2;
@@ -676,10 +691,10 @@ h6 {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
@@ -687,13 +702,44 @@ h6 {
     .personal-card__container-logo {
       padding: 41px 0 34px 90px; }
     .personal-card__container-text {
-      padding: 50px 0 0 75px; }
+      padding: 50px 0 0 75px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: column nowrap;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap; }
+      .personal-card__container-text .title_name {
+        font-size: 24px;
+        text-align: left;
+        margin: 0 0 12px 0; }
+        .personal-card__container-text .title_name::after {
+          display: none; }
+      .personal-card__container-text .name-quote {
+        font-size: 32px;
+        font-weight: 300; }
+        .personal-card__container-text .name-quote::after {
+          display: block;
+          content: '';
+          background: #f7a60f;
+          width: 100px;
+          height: 8px;
+          margin: 16px 0; }
   .personal-card__img {
     height: 314px;
     width: 314px;
     border-radius: 50%;
     -o-object-fit: contain;
        object-fit: contain; }
+
+@media screen and (max-width: 1024px) {
+  .personal-card__container-logo {
+    padding-left: 0; }
+  .personal-card__img {
+    width: 200px; } }
 
 @media screen and (max-width: 767px) {
   .personal-card__container {
@@ -711,9 +757,12 @@ h6 {
     padding: 0;
     width: 100%; }
   .personal-card__img {
-    width: 100%; }
+    width: 100%;
+    height: auto; }
   .personal-card__container-text {
-    padding: 0; } }
+    padding: 0; }
+  .name-quote {
+    font-size: 18px !important; } }
 
 ul,
 li {
@@ -815,7 +864,54 @@ li {
 
 @media screen and (max-width: 1024px) {
   .slider__item {
-    max-width: 730px; } }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    max-width: 730px; }
+  .slider__text {
+    padding-left: 0;
+    padding-top: 20px; } }
+
+@media screen and (max-width: 750px) {
+  .slider__img {
+    display: none; }
+  .slider__item {
+    background: #fff;
+    border-radius: 6px;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 29px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 5px 29px 0px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    position: relative;
+    margin-right: 26px; }
+  .slider__btn-text {
+    display: none; }
+  .slider__button {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    height: 40px;
+    width: 40px; }
+  .nextbtn {
+    right: -10px;
+    z-index: 10; }
+  .prevbtn {
+    left: -16px;
+    z-index: 10; }
+  .slider__container {
+    overflow: unset; } }
 
 .loft-love__container {
   padding: 110px 0;
@@ -1175,7 +1271,7 @@ li {
     width: 30px;
     height: 18px;
     padding-right: 7px;
-    background: url("../img/icons/vk_logo.svg") center center/contain no-repeat; }
+    background: url("../img/icons/vk_logo.png") center center/contain no-repeat; }
   .contacts__telega {
     padding-left: 28px; }
     .contacts__telega:before {
@@ -1184,7 +1280,7 @@ li {
       width: 30px;
       height: 18px;
       padding-right: 7px;
-      background: url("../img/icons/telegram.svg") center center/contain no-repeat; }
+      background: url("../img/icons/telegram.png") center center/contain no-repeat; }
 
 @media screen and (max-width: 1024px) {
   .contacts__telega {
