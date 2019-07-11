@@ -736,23 +736,23 @@
             концепцию.
           </p>
 
-          <form action="index.html">
+          <form action="data.php" method="POST">
             <div class="modal__input-container">
-              <input type="text" class="modal__input-input" placeholder="ФИО"><br />
-              <input type="text" class="modal__input-input" placeholder="Email"><br />
+              <input type="text" class="modal__input-input" placeholder="ФИО" required name="name"><br />
+              <input type="text" class="modal__input-input" placeholder="Email" required name="email"><br />
               <input type="text" class="modal__input-input"
-                placeholder="Cсылка на личный сайт, соцсеть или мессенджер"><br />
-              <input type="text" class="modal__input-input" placeholder="Область в которой вы эксперт"><br />
-              <input type="text" class="modal__input-input" placeholder="Каким навыкам вы можете научить?"><br />
+                placeholder="Cсылка на личный сайт, соцсеть или мессенджер" required name="social"><br />
+              <input type="text" class="modal__input-input" placeholder="Область в которой вы эксперт" required name="oblast"><br />
+              <input type="text" class="modal__input-input" placeholder="Каким навыкам вы можете научить?" required name="skills"><br />
               <input type="text" class="modal__input-input"
-                placeholder="Какой практический опыт у вас есть в этой области?"><br />
+                placeholder="Какой практический опыт у вас есть в этой области?" required name="expirience"><br />
               <input type="text" class="modal__input-input"
-                placeholder="Какая у вас активность в тематических сообществах?"><br />
+                placeholder="Какая у вас активность в тематических сообществах?" required name="activity"><br />
               <input type="text" class="modal__input-input"
-                placeholder="Почему вы отлично подходите для LoftTeam?"><br />
-              <input type="text" class="modal__input-input" placeholder="Тема вашего будущего курса"><br />
+                placeholder="Почему вы отлично подходите для LoftTeam?" required name="lofteam"><br />
+              <input type="text" class="modal__input-input" placeholder="Тема вашего будущего курса" required name="theme"><br />
               <input type="text" class="modal__input-input"
-                placeholder="Ссылка на ваш скринкаст, вебинар или выступление">
+                placeholder="Ссылка на ваш скринкаст, вебинар или выступление" required name="you">
             </div>
             <div class="modal__btn-container">
               <button type="submit" class="button">Отправить</button>
