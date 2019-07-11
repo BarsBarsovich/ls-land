@@ -574,6 +574,94 @@ h6 {
     -o-object-fit: contain;
     object-fit: contain; }
 
+ul,
+li {
+  padding: 0; }
+
+.slider {
+  padding-bottom: 200px; }
+  .slider__container {
+    overflow: hidden; }
+  .slider__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1100px;
+    padding-top: 65px; }
+  .slider__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding-top: 55px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .slider__btn-text {
+    padding: 0 20px;
+    font-size: 21px;
+    font-family: "Montserrat";
+    color: #333333; }
+  .slider__text {
+    padding-left: 100px; }
+    .slider__text-title {
+      padding-top: 30px;
+      font-size: 36px;
+      font-family: "Montserrat";
+      color: #333333;
+      font-weight: bold; }
+    .slider__text-desc {
+      padding-top: 20px;
+      font-size: 21px;
+      font-family: "Montserrat";
+      color: #333333; }
+  .slider__btn-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .slider__button {
+    height: 63px;
+    width: 63px;
+    border-radius: 50%;
+    background: #f2f7f8;
+    outline: none;
+    border: 2px solid #4abba4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .slider__button--greenbg {
+      background: #4abba4; }
+    .slider__button-arrow {
+      height: 32px;
+      width: 32px; }
+  .slider__steps-list {
+    margin-left: 15px; }
+  .slider__steps-item {
+    padding-top: 30px;
+    font-size: 17px;
+    font-family: "Montserrat";
+    color: #333333;
+    line-height: 1.281; }
+    .slider__steps-item:first-child {
+      padding-top: 0; }
+  .slider__btn {
+    padding-top: 35px; }
+
 .loft-love__container {
   padding: 110px 0;
   display: -webkit-box;
