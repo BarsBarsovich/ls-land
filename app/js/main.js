@@ -1,12 +1,17 @@
 const btn = document.querySelector('#sendrequest');
 const close = document.querySelector('#close');
-
 const prevBtn = document.querySelectorAll('.prevbtn');
 const nextBtn = document.querySelectorAll('.nextbtn');
 const slidesWrapper =  document.querySelector('.slider__list');
-
 let slidesCount = 1;
 let sliderPosition;
+
+let widthSliderItem = document.querySelector('.slider__item');
+widthSliderItem.style.width =  widthSliderItem.clientWidth + 'px';
+console.log(widthSliderItem);
+
+
+
 
 btn.addEventListener('click', function () {
   const modal = document.querySelector('#modalwindow');
@@ -22,7 +27,7 @@ close.addEventListener('click', function () {
 Array.from(prevBtn).forEach((item) => {
   item.addEventListener('click', function () {  
     slidesCount--;
-    sliderPosition -= 1100;
+    sliderPosition -= widthSliderItem;
     slidesWrapper.style.transform = `translateX(-${sliderPosition}px)`;
     document.getElementById('lastbtn').disabled = false;
   })
@@ -31,7 +36,7 @@ Array.from(prevBtn).forEach((item) => {
 Array.from(nextBtn).forEach((item)=>{
   item.addEventListener('click', function(){    
     if (slidesCount <= 3){
-      sliderPosition = slidesCount * 1100;
+      sliderPosition = slidesCount * widthSliderItem;
       slidesWrapper.style.transform = `translateX(-${sliderPosition}px)`
       slidesCount++;
     }
@@ -42,3 +47,16 @@ Array.from(nextBtn).forEach((item)=>{
     
   })
 })
+
+function sendForm() {
+  event.preventDefault();
+  $.ajax({
+      type: "get",
+      url: "./data.php",
+      data: $("#myform").serialize(),
+      success: function (data) {
+          $('.form').toggleClass('active');
+          alert('Письмо отправлено');
+      }
+  });
+}
