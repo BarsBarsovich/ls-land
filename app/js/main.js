@@ -1,4 +1,5 @@
-const btn = document.querySelector('#sendrequest');
+const btnArr = document.querySelectorAll('.sendrequest');
+
 const close = document.querySelector('#close');
 const prevBtn = document.querySelectorAll('.prevbtn');
 const nextBtn = document.querySelectorAll('.nextbtn');
@@ -31,11 +32,14 @@ if (window.outerWidth < 769) {
 console.log(widthSliderItem);
 
 
-btn.addEventListener('click', function () {
-  const modal = document.querySelector('#modalwindow');
-  console.log(modal);
-  modal.classList.add('modal--active');
-});
+Array.from(btnArr).forEach(item=>{
+  item.addEventListener('click', function () {
+    const modal = document.querySelector('#modalwindow');
+    console.log(modal);
+    modal.classList.add('modal--active');
+  });
+  
+})
 
 close.addEventListener('click', function () {
   const modal = document.querySelector('#modalwindow');
