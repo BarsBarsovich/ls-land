@@ -620,6 +620,12 @@ h6 {
     color: #333333; }
     .authors__card-photo {
       padding-bottom: 20px; }
+    .authors__card-img {
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      -o-object-fit: cover;
+         object-fit: cover; }
     .authors__card-name {
       font-size: 27px;
       line-height: 0.788; }
@@ -781,7 +787,10 @@ li {
     display: -ms-flexbox;
     display: flex;
     width: 1100px;
-    padding-top: 65px; }
+    padding-top: 65px;
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear; }
   .slider__item {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1092,8 +1101,8 @@ li {
     .card__header-img {
       height: 33px;
       width: 33px;
-      -o-object-fit: contain;
-         object-fit: contain;
+      -o-object-fit: cover;
+         object-fit: cover;
       border-radius: 50%; }
     .card__header-name {
       color: #333333;
@@ -1319,7 +1328,12 @@ li {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  opacity: 0; }
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear; }
   .modal--active {
     opacity: 1;
     -webkit-transition: all .2s linear;
@@ -1331,8 +1345,8 @@ li {
     position: absolute;
     height: 25px;
     width: 25px;
-    top: 21px;
-    right: 10px; }
+    top: 13px;
+    right: 13px; }
   .modal__window {
     width: 584px;
     height: auto;

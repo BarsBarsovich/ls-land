@@ -29,14 +29,12 @@ if (window.outerWidth < 769) {
   fixedItem = 1100;
 }
 
-console.log(widthSliderItem);
-
-
 Array.from(btnArr).forEach(item=>{
-  item.addEventListener('click', function () {
+  item.addEventListener('click', function (e) {
+    console.log(e.target.innerText);
     const modal = document.querySelector('#modalwindow');
-    console.log(modal);
     modal.classList.add('modal--active');
+    document.getElementById('modalcaption').innerText = e.target.innerText;
   });  
 })
 
