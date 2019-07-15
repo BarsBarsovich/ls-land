@@ -11,4 +11,9 @@
   &:focus{
     outline: auto;
   }
+
+  &:hover{
+    cursor: pointer;
+    background: #c2423a;
+  }
 }

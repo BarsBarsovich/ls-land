@@ -37,8 +37,7 @@ Array.from(btnArr).forEach(item=>{
     const modal = document.querySelector('#modalwindow');
     console.log(modal);
     modal.classList.add('modal--active');
-  });
-  
+  });  
 })
 
 close.addEventListener('click', function () {
