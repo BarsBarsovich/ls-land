@@ -1311,11 +1311,13 @@ li {
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap; } }
 
-#modal {
+.modal {
   position: fixed;
-  top: -10000px;
-  left: -10000px;
-  background: #3d3d3d;
+  left: 0;
+  top: 100vh;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1328,53 +1330,73 @@ li {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: -1;
   opacity: 0;
-  height: 100vh;
-  width: 100vw;
-  -webkit-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear; }
-  #modal--active {
-    opacity: 1;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
-    transition: all .2s linear;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+  .modal--active {
     top: 0;
-    left: 0; }
-  #modal__close {
+    z-index: 999;
+    opacity: 1; }
+  .modal__bg {
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
-    height: 25px;
-    width: 25px;
-    top: 13px;
-    right: 13px; }
-  #modal__window {
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1000; }
+  .modal__close {
+    border: none;
+    background: transparent;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    outline: none; }
+  .modal__body {
+    background: #F1F1F1;
+    z-index: 9999;
+    padding: 40px 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column nowrap;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    position: relative;
     width: 584px;
     height: auto;
     -webkit-box-shadow: 2px 5px 29px rgba(0, 0, 0, 0.1);
             box-shadow: 2px 5px 29px rgba(0, 0, 0, 0.1);
-    background-color: #f2f7f8;
     font-family: Montserrat; }
-  #modal__container {
-    padding: 52px 22px 42px 22px;
-    position: relative; }
-  #modal__text {
+  .modal__text {
     padding-top: 26px;
     color: #333333;
     font-size: 17px;
     font-weight: 400;
     text-align: center; }
-    #modal__text--first-elem {
+    .modal__text--first-elem {
       padding-top: 52px; }
-  #modal__input-container {
+  .modal__input-container {
     padding-top: 37px; }
-  #modal__input-input {
-    width: 506px;
+  .modal__input-input {
+    max-width: 506px;
+    width: 100%;
     height: 35px;
     margin-top: 20px;
     color: #666666;
     font-size: 16px;
     font-weight: 400; }
-  #modal__btn-container {
+  .modal__btn-container {
     padding-top: 30px;
     text-align: center; }
 

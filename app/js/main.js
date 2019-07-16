@@ -54,7 +54,7 @@ Array.from(youtubebutton).forEach(item => {
     item.addEventListener('click', function (e) {
         e.preventDefault();        
         const rootEl = document.querySelector('.overlay');
-        const videoUrl = this.dataset.id === "vova" ? 'https://www.youtube.com/embed/hMPMUDydTtQ' :
+        const videoUrl = this.dataset.id === "vova" ? 'https://www.youtube.com/embed/Fgb2izt19OI?autoplay=1' :
         'https://www.youtube.com/embed/CRT39ITMANs?autoplay=1';
 
         rootEl.classList.add('is-visible');
