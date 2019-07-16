@@ -12,7 +12,7 @@ let sliderPosition;
 let widthSliderItem = document.querySelector('.slider__item');
 let fixedItem = 0;
 
-if (window.outerWidth < 769) {    
+if (window.outerWidth < 769) {
     if (window.outerWidth < 400) {
         let temp = document.querySelectorAll('.slider__item');
         Array.from(temp).forEach(item => {
@@ -31,7 +31,7 @@ if (window.outerWidth < 769) {
 }
 
 Array.from(btnArr).forEach(item => {
-    item.addEventListener('click', function (e) {        
+    item.addEventListener('click', function (e) {
         const modal = document.querySelector('#modalwindow');
         modal.classList.add('modal--active');
         document.getElementById('modalcaption').innerText = e.target.innerText;
@@ -44,6 +44,7 @@ close.addEventListener('click', function () {
 });
 
 overlay.addEventListener('click', function () {
+    console.log('i called');
     document.body.classList.remove('is-modal');
     const rootEl = document.querySelector('.overlay');
     rootEl.classList.remove('is-visible');
@@ -52,19 +53,20 @@ overlay.addEventListener('click', function () {
 
 Array.from(youtubebutton).forEach(item => {
     item.addEventListener('click', function (e) {
-        e.preventDefault();        
+        e.preventDefault();
         const rootEl = document.querySelector('.overlay');
         const videoUrl = this.dataset.id === "vova" ? 'https://www.youtube.com/embed/Fgb2izt19OI?autoplay=1' :
-        'https://www.youtube.com/embed/CRT39ITMANs?autoplay=1';
+            'https://www.youtube.com/embed/CRT39ITMANs?autoplay=1';
 
         rootEl.classList.add('is-visible');
-        const player = document.createElement('div');
-        player.innerHTML = `<div class="mask"><div class="close"></div><div class="youtubemodal no-paddings videoframe__modal "style="background-color: transparent; margin-top: 201.5px;"><div class="x-aspectratio" user="[object Object]">`
-        + `<iframe src="${videoUrl}" frameborder="0" id="youtube_player" allowfullscreen="allowfullscreen" title="YouTube"allow="autoplay" class="x-aspectratio-inner"></iframe></div></div></div>`;
-        
-        rootEl.appendChild(player);
-        document.body.classList.add('is-modal');
+        if (rootEl.querySelector('.mask') == undefined) {
+            const player = document.createElement('div');
+            player.innerHTML = `<div class="mask"><div class="close"></div><div class="youtubemodal no-paddings videoframe__modal "style="background-color: transparent; margin-top: 201.5px;"><div class="x-aspectratio" user="[object Object]">`
+                + `<iframe src="${videoUrl}" frameborder="0" id="youtube_player" allowfullscreen="allowfullscreen" title="YouTube"allow="autoplay" class="x-aspectratio-inner"></iframe></div></div></div>`;
 
+            rootEl.appendChild(player);
+        }
+        document.body.classList.add('is-modal');
     })
 });
 
