@@ -51,9 +51,9 @@
         flex-flow: column nowrap;
         position: relative;
         width: 584px;
-        height: auto;
+        height: 100vh;
         box-shadow: 2px 5px 29px rgba(0, 0, 0, 0.1);
-        //     background-color: #f2f7f8;
+        overflow-y: scroll;
         font-family: Montserrat;
     }
 

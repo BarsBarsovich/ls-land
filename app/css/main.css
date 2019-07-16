@@ -1004,6 +1004,18 @@ li {
       padding-left: 50px; }
       .loftblog__container-desc--no-padding {
         padding-left: 0; }
+    .loftblog__container-img {
+      width: 595px;
+      height: 395px; }
+      .loftblog__container-img--abs {
+        position: relative; }
+      .loftblog__container-img--play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
 
 @media screen and (max-width: 1024px) {
   .loftblog__container {
@@ -1374,9 +1386,10 @@ li {
             flex-flow: column nowrap;
     position: relative;
     width: 584px;
-    height: auto;
+    height: 100vh;
     -webkit-box-shadow: 2px 5px 29px rgba(0, 0, 0, 0.1);
             box-shadow: 2px 5px 29px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
     font-family: Montserrat; }
   .modal__text {
     padding-top: 26px;
@@ -1428,7 +1441,11 @@ li {
 
 .youtubebutton {
   outline: none;
-  border: none; }
+  border: none;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: block; }
   .youtubebutton:focus {
     outline: auto; }
   .youtubebutton:hover {
@@ -1451,7 +1468,7 @@ li {
 .youtubemodal {
   position: absolute;
   margin: auto;
-  top: 0;
+  top: -170px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -1460,7 +1477,15 @@ li {
   padding: 2.5rem;
   background-color: #fff;
   margin-top: 0;
-  width: 100%; }
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .x-aspectratio {
   position: relative;
